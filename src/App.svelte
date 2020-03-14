@@ -1,16 +1,21 @@
 <script>
-  export let name;
+  import Hero from "./Hero.svelte";
 </script>
 
-<style lang="scss">
+<style global lang="scss">
   @import "./styles/global.scss";
 </style>
 
+<header>
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <span class="navbar-item has-text-info is-size-5 has-text-weight-bold">
+        eDostava
+      </span>
+    </div>
+  </nav>
+</header>
+
 <main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
+  <Hero />
 </main>

@@ -1,5 +1,16 @@
 @import "./theme.scss";
 
-h1 {
-  color: blue;
+@import "bulma/bulma.sass";
+
+.title {
+  font-weight: $weight-bold;
+}
+
+.is-highlighted-info {
+  background: $info-light;
+  padding: 0 0.25rem;
+}
+
+.title {
+  line-height: normal;
 }
