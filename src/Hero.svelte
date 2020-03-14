@@ -9,9 +9,8 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
   }
-  .main-secondary-text {
-    max-width: 30rem;
-    margin-bottom: 2rem;
+  .button {
+    margin-top: 2rem;
   }
   .item {
     background: $info-lighter;
@@ -43,7 +42,8 @@
           kar
           <span class="is-highlighted-info">od doma</span>
         </h1>
-        <div class="has-text-grey has-margin-bottom-2rem main-secondary-text">
+        <div
+          class="has-text-grey has-margin-bottom-2rem main-secondary-text-short">
           Ko nimate časa, ste utrujeni ali enostavno želite ostati več časa doma
           z družino vam priskočimo na pomoč.
         </div>

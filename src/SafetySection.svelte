@@ -32,7 +32,7 @@
           kar
           <span class="is-highlighted-primary">od doma</span>
         </h1>
-        <div class="has-text-grey main-secondary-text">
+        <div class="has-text-grey main-secondary-text-short">
           Ko nimate časa, ste utrujeni ali enostavno želite ostati več časa doma
           z družino vam priskočimo na pomoč.
         </div>
