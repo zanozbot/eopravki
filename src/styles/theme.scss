@@ -1,5 +1,7 @@
 $family-primary: 'Nunito', sans-serif;
 $primary: #0081FF;
+$primary-light: lighten($primary, 30%);
+$primary-lighter: lighten($primary, 45%);
 $info: #FF9B71;
 $info-light: lighten($info, 20%);
 $info-lighter: lighten($info, 25%);

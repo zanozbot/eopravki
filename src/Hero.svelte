@@ -4,26 +4,16 @@
 
 <style lang="scss">
   @import "./styles/theme.scss";
-
-  .hero-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-column-gap: 1rem;
-    align-items: center;
-  }
-
-  .hero-items {
+  .items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
   }
-
   .main-secondary-text {
     max-width: 30rem;
     margin-bottom: 2rem;
   }
-
-  .hero-item {
+  .item {
     background: $info-lighter;
     padding: 1.5rem;
     border-radius: $border-radius;
@@ -36,18 +26,8 @@
   }
 
   @media (min-width: 1215px) {
-    .hero-items {
+    .items {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  }
-
-  @media (max-width: 1023px) {
-    .hero-grid {
-      grid-template-columns: none;
-    }
-
-    .hero-items {
-      margin-top: 3rem;
     }
   }
 </style>
@@ -55,8 +35,8 @@
 <section class="section">
   <div class="container">
 
-    <div class="hero-grid">
-      <div class="hero-content">
+    <div class="content-grid">
+      <div class="content content-margin-bottom">
         <h1 class="title">
           Enostavno po opravkih,
           <br />
@@ -72,8 +52,8 @@
         </button>
       </div>
 
-      <div class="hero-items">
-        <div class="hero-item">
+      <div class="items">
+        <div class="item">
           <span class="icon is-large has-text-info">
             <i class="fas fa-shopping-cart fa-2x" />
           </span>
@@ -83,7 +63,7 @@
           </div>
         </div>
 
-        <div class="hero-item">
+        <div class="item">
           <span class="icon is-large has-text-info">
             <i class="fas fa-pills fa-2x" />
           </span>
@@ -93,7 +73,7 @@
           </div>
         </div>
 
-        <div class="hero-item">
+        <div class="item">
           <span class="icon is-large has-text-info">
             <i class="fas fa-book fa-2x" />
           </span>
@@ -103,7 +83,7 @@
           </div>
         </div>
 
-        <div class="hero-item">
+        <div class="item">
           <span class="icon is-large has-text-info">
             <i class="fas fa-random fa-2x" />
           </span>
