@@ -4,6 +4,7 @@
   import ExplainSection from "./ExplainSection.svelte";
   import PriceSection from "./PriceSection.svelte";
   import SubscribeSection from "./SubscribeSection.svelte";
+  import Footer from "./Footer.svelte";
 </script>
 
 <style global lang="scss">
@@ -26,4 +27,5 @@
   <ExplainSection />
   <PriceSection />
   <SubscribeSection />
+  <Footer />
 </main>

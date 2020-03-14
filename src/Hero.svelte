@@ -47,7 +47,7 @@
           Ko nimate časa, ste utrujeni ali enostavno želite ostati več časa doma
           z družino vam priskočimo na pomoč.
         </div>
-        <button class="button is-link is-info is-rounded has-text-weight-bold">
+        <button class="button is-link is-info has-text-weight-bold">
           Prijavite se →
         </button>
       </div>

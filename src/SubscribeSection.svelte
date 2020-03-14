@@ -125,8 +125,7 @@
             novice, obvestila, članke in posebne ponudbe.
           </label>
 
-          <button
-            class="button is-link is-info is-rounded has-text-weight-bold">
+          <button class="button is-link is-info has-text-weight-bold">
             Prijavite se →
           </button>
 
