@@ -25,20 +25,22 @@
 
 <section class="section">
   <div class="container">
-    <div class="is-flex explain-content">
-      <div class="line" />
-      <div>
-        <h1 class="title main-secondary-text-long">
-          Vi ostanete doma, mi poskrbimo da bo hladilnik poln in opravki
-          zaključeni.
-        </h1>
-        <div class="has-text-grey main-secondary-text-long">
-          S kvalificiranim osebjem vam zagotovimo hiter obisk trgovine, lekarne,
-          ... ali opravljanje različnih opravkov, kot so vračila knjig in razni
-          prevzemi. Vse iz udobja vašega doma.
-        </div>
-        <div class="has-text-grey main-secondary-text-long">
-          Enostavno sporočite vaše želje in mi jih izpolnimo.
+    <div class="content-grid">
+      <div class="is-flex explain-content">
+        <div class="line" />
+        <div>
+          <h1 class="title main-secondary-text-long">
+            Vi ostanete doma, mi poskrbimo da bo hladilnik poln in opravki
+            zaključeni.
+          </h1>
+          <div class="has-text-grey main-secondary-text-long">
+            S kvalificiranim osebjem vam zagotovimo hiter obisk trgovine,
+            lekarne, ... ali opravljanje različnih opravkov, kot so vračila
+            knjig in razni prevzemi. Vse iz udobja vašega doma.
+          </div>
+          <div class="has-text-grey main-secondary-text-long">
+            Enostavno sporočite vaše želje in mi jih izpolnimo.
+          </div>
         </div>
       </div>
     </div>

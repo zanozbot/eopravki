@@ -2,6 +2,7 @@
   import Hero from "./Hero.svelte";
   import SafetySection from "./SafetySection.svelte";
   import ExplainSection from "./ExplainSection.svelte";
+  import PriceSection from "./PriceSection.svelte";
 </script>
 
 <style global lang="scss">
@@ -22,4 +23,5 @@
   <Hero />
   <SafetySection />
   <ExplainSection />
+  <PriceSection />
 </main>
