@@ -3,6 +3,7 @@
   import SafetySection from "./SafetySection.svelte";
   import ExplainSection from "./ExplainSection.svelte";
   import PriceSection from "./PriceSection.svelte";
+  import SubscribeSection from "./SubscribeSection.svelte";
 </script>
 
 <style global lang="scss">
@@ -24,4 +25,5 @@
   <SafetySection />
   <ExplainSection />
   <PriceSection />
+  <SubscribeSection />
 </main>
