@@ -1,5 +1,7 @@
 <script>
   import { isModalActive } from "./store.js";
+  import { createForm } from "svelte-forms-lib";
+  import * as yup from "yup";
 
   let areas = [
     "Gorenjska",
@@ -16,8 +18,47 @@
     "Zasavska"
   ];
 
+  let email;
+  let name;
+  let area = areas[1];
+  let agreement;
+
+  const schema = yup.object().shape({
+    email: yup
+      .string()
+      .required()
+      .email(),
+    name: yup
+      .string()
+      .min(6)
+      .required(),
+    area: yup.string().required(),
+    agreement: yup
+      .boolean()
+      .required()
+      .oneOf([true])
+  });
+
+  const isDirty = {};
+
+  $: isFormValid = schema.isValidSync({ email, name, area, agreement });
+  $: isPropValid = function(prop, value) {
+    try {
+      schema.validateSyncAt(prop, value);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+
   function openModal() {
     isModalActive.set(true);
+  }
+
+  function markAsDirty(prop, value) {
+    if (value != null) {
+      isDirty[prop] = true;
+    }
   }
 </script>
 
@@ -46,6 +87,10 @@
     select {
       height: 3rem;
     }
+  }
+
+  .select::after {
+    border-color: $info;
   }
 
   .end-of-content {
@@ -87,34 +132,56 @@
           </div>
 
           <label for="email">Elektronska pošta</label>
-          <div class="control has-icons-left">
+          <div class="control has-icons-left has-icons-right">
             <input
               class="input"
+              class:is-danger={!isPropValid('email', {
+                email
+              }) && isDirty['email']}
+              on:change={markAsDirty('email', email)}
               type="email"
               id="email"
+              name="email"
+              bind:value={email}
               placeholder="Vnesite elektronsko pošto" />
             <span class="icon is-small is-left">
               <i class="fas fa-envelope" />
             </span>
+            {#if isPropValid('email', { email })}
+              <span class="icon is-small is-right">
+                <i class="fas fa-check has-text-info" />
+              </span>
+            {/if}
           </div>
 
           <label for="name">Ime in priimek</label>
-          <div class="control has-icons-left">
+          <div class="control has-icons-left has-icons-right">
             <input
               class="input"
-              type="email"
+              class:is-danger={!isPropValid('name', {
+                name
+              }) && isDirty['name']}
+              type="text"
+              on:change={markAsDirty('name', name)}
               id="name"
+              name="name"
+              bind:value={name}
               placeholder="Vnesite ime in priimek" />
             <span class="icon is-small is-left">
               <i class="fas fa-user" />
             </span>
+            {#if isPropValid('name', { name })}
+              <span class="icon is-small is-right">
+                <i class="fas fa-check has-text-info" />
+              </span>
+            {/if}
           </div>
 
           <label for="area">Lokacija</label>
           <div class="field">
             <div class="control has-icons-left">
               <div class="select">
-                <select id="area">
+                <select id="area" name="area" bind:value={area}>
                   {#each areas as area}
                     <option value={area}>{area}</option>
                   {/each}
@@ -127,13 +194,14 @@
           </div>
 
           <label class="checkbox main-secondary-text-long has-text-grey">
-            <input type="checkbox" />
+            <input type="checkbox" name="agreement" bind:checked={agreement} />
             Strinjam se, da lahko na vpisan email naslov prejemam eDostava
             novice, obvestila, članke in posebne ponudbe.
           </label>
 
           <button
             class="button is-link is-info has-text-weight-bold"
+            disabled={!isFormValid}
             on:click={openModal}>
             Prijavite se →
           </button>
