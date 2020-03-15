@@ -36,6 +36,7 @@
 
     <div class="content-grid">
       <div class="content content-margin-bottom">
+        <div class="bubble top-left info" />
         <h1 class="title">
           Enostavno po opravkih,
           <br />

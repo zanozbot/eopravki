@@ -75,6 +75,7 @@
   <div class="container">
     <div class="content-grid">
       <div class="is-flex subscribe-content">
+        <div class="bubble bottom-middle info" />
         <div class="line" />
         <div>
           <h1 class="title main-secondary-text-long">
