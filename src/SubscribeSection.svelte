@@ -1,6 +1,6 @@
 <script>
   import { isModalActive } from "./store.js";
-  import { createForm } from "svelte-forms-lib";
+  import Input from "./Input.svelte";
   import * as yup from "yup";
 
   let areas = [
@@ -39,26 +39,10 @@
       .oneOf([true])
   });
 
-  const isDirty = {};
-
   $: isFormValid = schema.isValidSync({ email, name, area, agreement });
-  $: isPropValid = function(prop, value) {
-    try {
-      schema.validateSyncAt(prop, value);
-      return true;
-    } catch (e) {
-      return false;
-    }
-  };
 
   function openModal() {
     isModalActive.set(true);
-  }
-
-  function markAsDirty(prop, value) {
-    if (value != null) {
-      isDirty[prop] = true;
-    }
   }
 </script>
 
@@ -73,37 +57,16 @@
     background: $info-light;
   }
 
-  .control {
-    margin-bottom: 1.5rem;
-
-    .select,
-    select {
-      width: 100%;
-    }
-
-    .input,
-    .select,
-    .icon,
-    select {
-      height: 3rem;
-    }
+  .end-of-content {
+    margin-bottom: 2rem;
   }
 
   .select::after {
     border-color: $info;
   }
 
-  .end-of-content {
-    margin-bottom: 2rem;
-  }
-
-  label {
-    margin-bottom: 0.25rem;
-    display: block;
-  }
-
   button {
-    margin-top: 2rem;
+    margin-top: 1.25rem;
   }
 
   @media (max-width: 1023px) {
@@ -131,51 +94,21 @@
             funkcionalne.
           </div>
 
-          <label for="email">Elektronska pošta</label>
-          <div class="control has-icons-left has-icons-right">
-            <input
-              class="input"
-              class:is-danger={!isPropValid('email', {
-                email
-              }) && isDirty['email']}
-              on:change={markAsDirty('email', email)}
-              type="email"
-              id="email"
-              name="email"
-              bind:value={email}
-              placeholder="Vnesite elektronsko pošto" />
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope" />
-            </span>
-            {#if isPropValid('email', { email })}
-              <span class="icon is-small is-right">
-                <i class="fas fa-check has-text-info" />
-              </span>
-            {/if}
-          </div>
+          <Input
+            {schema}
+            label="Elektronska pošta"
+            placeholder="Vnesite elektronsko pošto"
+            bind:value={email}
+            icon="envelope"
+            prop="email" />
 
-          <label for="name">Ime in priimek</label>
-          <div class="control has-icons-left has-icons-right">
-            <input
-              class="input"
-              class:is-danger={!isPropValid('name', {
-                name
-              }) && isDirty['name']}
-              type="text"
-              on:change={markAsDirty('name', name)}
-              id="name"
-              name="name"
-              bind:value={name}
-              placeholder="Vnesite ime in priimek" />
-            <span class="icon is-small is-left">
-              <i class="fas fa-user" />
-            </span>
-            {#if isPropValid('name', { name })}
-              <span class="icon is-small is-right">
-                <i class="fas fa-check has-text-info" />
-              </span>
-            {/if}
-          </div>
+          <Input
+            {schema}
+            label="Ime in priimek"
+            placeholder="Vnesite ime in priimek"
+            bind:value={name}
+            icon="user"
+            prop="name" />
 
           <label for="area">Lokacija</label>
           <div class="field">
@@ -193,11 +126,16 @@
             </div>
           </div>
 
-          <label class="checkbox main-secondary-text-long has-text-grey">
-            <input type="checkbox" name="agreement" bind:checked={agreement} />
-            Strinjam se, da lahko na vpisan email naslov prejemam eDostava
-            novice, obvestila, članke in posebne ponudbe.
-          </label>
+          <div class="field">
+            <label class="checkbox main-secondary-text-long has-text-grey">
+              <input
+                type="checkbox"
+                name="agreement"
+                bind:checked={agreement} />
+              Strinjam se, da lahko na vpisan email naslov prejemam eDostava
+              novice, obvestila, članke in posebne ponudbe.
+            </label>
+          </div>
 
           <button
             class="button is-link is-info has-text-weight-bold"
@@ -205,7 +143,6 @@
             on:click={openModal}>
             Prijavite se →
           </button>
-
         </div>
       </div>
     </div>

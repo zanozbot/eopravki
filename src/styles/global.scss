@@ -98,3 +98,24 @@
     display: none;
   }
 }
+
+  .control {
+    margin-bottom: 1.5rem;
+    
+    .select,
+    select {
+      width: 100%;
+    }
+
+    .input,
+    .select,
+    .icon,
+    select {
+      height: 3rem !important;
+    }
+  }
+
+    label {
+    margin-bottom: 0.25rem;
+    display: block;
+  }
