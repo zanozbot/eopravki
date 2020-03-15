@@ -18,8 +18,8 @@
     aria-label="main navigation">
     <div class="navbar-brand">
       <span class="navbar-item has-text-info is-size-5 has-text-weight-bold">
-        <span class="brand-name">eDostava</span>
-        <img src="images/icon.png" alt="Logo eDostava" />
+        <span class="brand-name">eOpravki</span>
+        <img src="images/icon.png" alt="Logo eOpravki" />
       </span>
     </div>
   </nav>

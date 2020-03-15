@@ -132,7 +132,7 @@
                 type="checkbox"
                 name="agreement"
                 bind:checked={agreement} />
-              Strinjam se, da lahko na vpisan email naslov prejemam eDostava
+              Strinjam se, da lahko na vpisan email naslov prejemam eOpravki
               novice, obvestila, članke in posebne ponudbe.
             </label>
           </div>

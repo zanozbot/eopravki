@@ -34,7 +34,7 @@
     <section class="section has-background-white">
       <h1 class="title main-secondary-text-long">Hvala za vaš interes.</h1>
       <div class="has-text-grey main-secondary-text-long end-of-content">
-        Prejeli smo vaše zanimanje za storitev eDostava. Sporočili vam bomo
+        Prejeli smo vaše zanimanje za storitev eOpravki. Sporočili vam bomo
         takoj, ko bo naročanje preko eDostave mogoče.
       </div>
 
