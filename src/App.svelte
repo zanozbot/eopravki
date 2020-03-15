@@ -6,23 +6,15 @@
   import SubscribeSection from "./SubscribeSection.svelte";
   import Footer from "./Footer.svelte";
   import Modal from "./Modal.svelte";
+  import Header from "./Header.svelte";
 </script>
 
 <style global lang="scss">
   @import "./styles/global.scss";
 </style>
 
-<header>
-  <nav class="navbar container" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <span class="navbar-item has-text-info is-size-5 has-text-weight-bold">
-        eDostava
-      </span>
-    </div>
-  </nav>
-</header>
-
 <main>
+  <Header />
   <Hero />
   <SafetySection />
   <ExplainSection />

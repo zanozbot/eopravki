@@ -24,6 +24,12 @@
     }
   }
 
+  @media (max-width: 1023px) {
+    .section {
+      padding-top: 1.5rem;
+    }
+  }
+
   @media (min-width: 1215px) {
     .items {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
