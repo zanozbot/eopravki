@@ -5,6 +5,7 @@
   import PriceSection from "./PriceSection.svelte";
   import SubscribeSection from "./SubscribeSection.svelte";
   import Footer from "./Footer.svelte";
+  import Modal from "./Modal.svelte";
 </script>
 
 <style global lang="scss">
@@ -27,5 +28,6 @@
   <ExplainSection />
   <PriceSection />
   <SubscribeSection />
+  <Modal />
   <Footer />
 </main>

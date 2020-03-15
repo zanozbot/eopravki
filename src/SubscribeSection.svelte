@@ -1,4 +1,6 @@
 <script>
+  import { isModalActive } from "./store.js";
+
   let areas = [
     "Gorenjska",
     "Goriška",
@@ -13,6 +15,10 @@
     "Savinjska",
     "Zasavska"
   ];
+
+  function openModal() {
+    isModalActive.set(true);
+  }
 </script>
 
 <style lang="scss">
@@ -125,7 +131,9 @@
             novice, obvestila, članke in posebne ponudbe.
           </label>
 
-          <button class="button is-link is-info has-text-weight-bold">
+          <button
+            class="button is-link is-info has-text-weight-bold"
+            on:click={openModal}>
             Prijavite se →
           </button>
 
