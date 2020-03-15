@@ -79,7 +79,7 @@
   }
 </style>
 
-<section class="section">
+<section id="prijava" class="section">
   <div class="container">
     <div class="content-grid">
       <div class="is-flex subscribe-content">

@@ -1,5 +1,7 @@
 <script>
-
+  function scrollToSubscription() {
+    document.getElementById("prijava").scrollIntoView({ behavior: "smooth" });
+  }
 </script>
 
 <style lang="scss">
@@ -54,7 +56,9 @@
           Ko nimate časa, ste utrujeni ali enostavno želite ostati več časa doma
           z družino vam priskočimo na pomoč.
         </div>
-        <button class="button is-link is-info has-text-weight-bold">
+        <button
+          class="button is-link is-info has-text-weight-bold"
+          on:click={scrollToSubscription}>
           Prijavite se →
         </button>
       </div>
