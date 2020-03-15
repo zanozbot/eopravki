@@ -1,8 +1,5 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
-
----
-
-# svelte app
+# Spletna aplikacija eDostava [![Netlify Status](https://api.netlify.com/api/v1/badges/3fb02814-a0ab-4fbc-9cf0-736a45f20c1a/deploy-status)](https://app.netlify.com/sites/edostava/deploys)
+> Ko nimate časa, ste utrujeni ali enostavno želite ostati več časa doma z družino vam priskočimo na pomoč.
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
