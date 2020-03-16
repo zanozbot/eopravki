@@ -100,7 +100,7 @@
           </span>
           <h3 class="title is-size-5 is-uppercase">Ostalo</h3>
           <div class="has-text-grey">
-            Razni ostali opravki, ki jih potrebujete
+            Razni ostali opravki, ki jih potrebujete izvedene na daljavo
           </div>
         </div>
       </div>

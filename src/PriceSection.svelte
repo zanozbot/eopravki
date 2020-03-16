@@ -23,11 +23,11 @@
     <div class="content-grid">
       <div class="content content-margin-bottom">
         <h1 class="title">
-          <span class="is-highlighted-info">25 € / uro</span>
-          + vsi nakupljeni izdelki
+          <span class="is-highlighted-info">10 € / uro</span>
+          + vsi nakupljeni izdelki ali storitve
         </h1>
         <div class="has-text-grey main-secondary-text-short">
-          Osnovn cena eDostave znaša 25€ na uro, na kar se doda cena vseh
+          Osnovn cena eOpravkov znaša 10€ na uro, na kar se doda cena vseh
           nakupljenih izdelkov in/ali cena opravljenih storitev.
         </div>
         <ul class="fa-ul has-text-grey">

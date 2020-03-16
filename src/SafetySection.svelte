@@ -27,14 +27,11 @@
 
       <div class="content content-margin-top">
         <h1 class="title">
-          Enostavno po opravkih,
-          <br />
-          kar
-          <span class="is-highlighted-primary">od doma</span>
+          <span class="is-highlighted-primary">Varno</span>
+          in enostavno
         </h1>
         <div class="has-text-grey main-secondary-text-short">
-          Ko nimate časa, ste utrujeni ali enostavno želite ostati več časa doma
-          z družino vam priskočimo na pomoč.
+          Pri eOpravkih skrbimo, da so storitve izvršene diskretno, hitro, varno in za uporabnika enostavno.
         </div>
         <ul class="fa-ul has-text-grey">
           <li>

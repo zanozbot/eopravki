@@ -35,7 +35,7 @@
       <h1 class="title main-secondary-text-long">Hvala za vaš interes.</h1>
       <div class="has-text-grey main-secondary-text-long end-of-content">
         Prejeli smo vaše zanimanje za storitev eOpravki. Sporočili vam bomo
-        takoj, ko bo naročanje preko eDostave mogoče.
+        takoj, ko bo naročanje preko eOpravkov mogoče.
       </div>
 
       <figure class="image">

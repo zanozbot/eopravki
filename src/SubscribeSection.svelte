@@ -90,7 +90,7 @@
             Prijavite se in ne izgubljajte več časa z nepotrebnimi opravki.
           </h1>
           <div class="has-text-grey main-secondary-text-long end-of-content">
-            Po prijavi vam sporočimo takoj, ko bodo storitve eDostave
+            Po prijavi vam sporočimo takoj, ko bodo storitve eOpravkov  
             funkcionalne.
           </div>
 
