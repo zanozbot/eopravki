@@ -29,7 +29,7 @@
           nakupljeni izdelki ali storitve
         </h1>
         <div class="has-text-grey main-secondary-text-short">
-          Osnovn cena eOpravkov znaša 10€ na opravek, na kar se doda cena vseh
+          Osnovn cena eOpravkov znaša 10 € na opravek, na kar se doda cena vseh
           nakupljenih izdelkov in/ali cena opravljenih storitev.
         </div>
         <ul class="fa-ul has-text-grey">

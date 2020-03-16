@@ -19,7 +19,7 @@
     }
   };
 
-  $: isDirty = value != null;
+  $: isDirty = value != null && value.length > 0;
 </script>
 
 <div class="field">
