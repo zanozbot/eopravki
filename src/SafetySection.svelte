@@ -31,7 +31,8 @@
           in enostavno
         </h1>
         <div class="has-text-grey main-secondary-text-short">
-          Pri eOpravkih skrbimo, da so storitve izvršene diskretno, hitro, varno in za uporabnika enostavno.
+          Pri eOpravkih skrbimo, da so storitve izvršene diskretno, hitro, varno
+          in za uporabnika enostavno.
         </div>
         <ul class="fa-ul has-text-grey">
           <li>

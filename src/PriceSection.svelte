@@ -23,11 +23,13 @@
     <div class="content-grid">
       <div class="content content-margin-bottom">
         <h1 class="title">
-          <span class="is-highlighted-info">10 € / uro</span>
-          + vsi nakupljeni izdelki ali storitve
+          <span class="is-highlighted-info">10 € na opravek</span>
+          + vsi
+          <br />
+          nakupljeni izdelki ali storitve
         </h1>
         <div class="has-text-grey main-secondary-text-short">
-          Osnovn cena eOpravkov znaša 10€ na uro, na kar se doda cena vseh
+          Osnovn cena eOpravkov znaša 10€ na opravek, na kar se doda cena vseh
           nakupljenih izdelkov in/ali cena opravljenih storitev.
         </div>
         <ul class="fa-ul has-text-grey">
@@ -53,9 +55,7 @@
       </div>
 
       <figure class="image">
-        <img
-          src="images/shopping.svg"
-          alt="25 € / uro + vsi nakupljeni izdelki" />
+        <img src="images/shopping.svg" alt="Cena opravkov" />
       </figure>
     </div>
   </div>
