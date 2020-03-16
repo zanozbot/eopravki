@@ -41,9 +41,31 @@
 
   $: isFormValid = schema.isValidSync({ email, name, area, agreement });
 
-  function openModal() {
+
+
+  async function openModal() {
     isModalActive.set(true);
+
+    const apiRoot = 'https://gmail.us19.list-manage.com/subscribe/post-json?u=9a49a5665462feee8b6f877e4&amp;id=d8f1f5d1e5&EMAIL=';
+
+    const apiURL = apiRoot + email + '&FNAME=' + name.split()[0] + '&LNAME=' + name.split().slice(1).join(' ') +'&c=?' ;
+    const response = await fetch(apiURL, {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      mode: 'no-cors', // no-cors, *cors, same-origin
+      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      }
+    });
+    name = '';
+    email = '';
   }
+
+
+
+
 </script>
 
 <style lang="scss">
@@ -93,14 +115,16 @@
             Po prijavi vam sporočimo takoj, ko bodo storitve eOpravkov  
             funkcionalne.
           </div>
-
+          
           <Input
             {schema}
             label="Elektronska pošta"
             placeholder="Vnesite elektronsko pošto"
             bind:value={email}
             icon="envelope"
-            prop="email" />
+            prop="email"
+            name="EMAIL" 
+            id="mce-EMAIL" />
 
           <Input
             {schema}
@@ -108,7 +132,9 @@
             placeholder="Vnesite ime in priimek"
             bind:value={name}
             icon="user"
-            prop="name" />
+            prop="name" 
+            name="FNAME" 
+            id="mce-FNAME"/>
 
           <label for="area">Lokacija</label>
           <div class="field">
@@ -148,3 +174,4 @@
     </div>
   </div>
 </section>
+
