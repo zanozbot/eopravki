@@ -88,7 +88,7 @@
           <span class="icon is-large has-text-info">
             <i class="fas fa-book fa-2x" />
           </span>
-          <h3 class="title is-size-5 is-uppercase">Knjižnjica</h3>
+          <h3 class="title is-size-5 is-uppercase">Knjižnica</h3>
           <div class="has-text-grey">
             Vrnitev ali izposoja knjige na vašo kartico
           </div>
